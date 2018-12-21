@@ -86,7 +86,7 @@ async function getReleases (commits, remote, latestVersion, options) {
       ]
     }
   }
-  return uniqBy(releases, 'tag').sort(sortReleases)
+  return uniqBy(releases, 'tag')//.sort(sortReleases)
 }
 
 export default async function run (argv) {
